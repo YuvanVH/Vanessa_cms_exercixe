@@ -1,3 +1,5 @@
+***Övningar från den 11 November***
+
 **Övning 1**
 - skapa två variabler och en array med minst tre
 lagrade värden.
