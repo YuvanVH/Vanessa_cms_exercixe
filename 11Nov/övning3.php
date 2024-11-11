@@ -8,16 +8,16 @@ function beställning($order)
   $fruktLista = implode(", ", $order["frukt"]); // Gör om frukt-arrayen till en sträng
   $extra = isset($order["extra"]) ? "<br> Med extra: {$order['extra']}" : "";
 
-  // Returnera beskrivningen av beställningen
+  // Returnera beskrivningen av beställning
   return "Beställningen ska till: Bord $bordNr.<br> Innehåller frukter: $fruktLista.$extra";
 }
 
-// Skapa en test-beställning
+// Skapa test-beställning
 $order = [
   "bordNr" => 5,
   "frukt" => ["apelsin", "äpple", "banan"],
   "extra" => "extra av allt!"
 ];
 
-// Testa funktionen och skriv ut resultatet
+// Testa funktionen + skriv ut resultat
 echo beställning($order);
