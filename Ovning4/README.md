@@ -1,6 +1,8 @@
-### Övning 4
+# Övning 4
 
-- Skapa webbplats med PHP.
+_Skapa webbplats med PHP._
+
+---
 
 ## Läsa ut dynamiskt innehåll Den här uppgiften går ut på att skapa en hel webbplats med startsida och två undersidor som skriver ut data dynamiskt med hjälp av PHP.
 
@@ -8,7 +10,7 @@
 
 - Det är rekommenderat att göra denna uppgift, ni kommer sedan i senare övningsuppgifter kunna återanvända och bygga vidare på webbplatsen ni skapat här.
 
-# Instruktioner:
+### Instruktioner:
 - Du ska skapa en startsida och två undersidor. Varje undersida ska ha en sidtitel utskriven på sidan med valfritt namn.
 
 - Startsida På startsidan ska en välkomsthälsning visas som ändras dynamiskt beroende på tid på dygnet. “God morgon”, “God förmiddag”, “God eftermiddag” eller “God kväll”. Välj själv lämpliga klockslag som brytpunkter. Varje hälsningsfras ska vara lagrad på varsitt index i en array varifrån respektive hälsning sedan hämtas och skrivs ut till skärmen.
