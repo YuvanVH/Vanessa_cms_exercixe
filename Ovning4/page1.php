@@ -3,10 +3,10 @@
 <h2>Idag</h2>
 
 <?php
-// Visar dagens veckodag och datum
+// Visar dagens veckodag & datum
 $locale = 'sv_SE';
 $formatter = new IntlDateFormatter($locale, IntlDateFormatter::FULL, IntlDateFormatter::NONE);
-$formatter->setPattern('EEEE d MMMM'); // Set custom pattern for Swedish date format
+$formatter->setPattern('EEEE d MMMM'); // Sätter svensk datum format
 
 $veckodagDatum = $formatter->format(new DateTime());
 echo "<p>Idag är det $veckodagDatum.</p>";
