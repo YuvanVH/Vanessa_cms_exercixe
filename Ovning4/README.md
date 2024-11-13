@@ -2,8 +2,6 @@
 
 _Skapa webbplats med PHP._
 
----
-
 ## Läsa ut dynamiskt innehåll Den här uppgiften går ut på att skapa en hel webbplats med startsida och två undersidor som skriver ut data dynamiskt med hjälp av PHP.
 
 - Gör en egen webbplats men det går bra att samarbeta med varandra.
