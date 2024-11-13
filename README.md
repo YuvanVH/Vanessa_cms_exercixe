@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Övning 4 - Skapa webbplats med PHP
 
 # Läsa ut dynamiskt innehåll
@@ -33,3 +34,8 @@ Krav på webbplatsen:
 
 Tips på läsvärda länkar finns på kurswebbplatsen (ITHS-distans).
 Lycka till!
+=======
+# Vanessa_cms_exercixe
+
+Här ligger övningar, labrationer osv inför kursen CMS.
+>>>>>>> origin/main
