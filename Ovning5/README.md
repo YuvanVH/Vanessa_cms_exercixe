@@ -49,7 +49,7 @@ Symbolisera gärna motsvarande hur många hästar som behöver jobba hur många 
 
 4. Skapa validering/felhantering för inmatningen i dina olika formulär. Välj egna lämpliga regler, t.ex. att användarens namn enbart får bestå av bokstäver och minst tre tecken eller liknande. Lägg gärna till olika felmeddelanden som visas beroende på vilket fel användaren gör. Det kan också vara trevligt att skriva ut ett meddelande om en inmatning har gjorts korrekt.
 
-(OBS! Gör all felhantering i din PHP-kod. Den inbyggda valideringen i HTML (såsom att ange required eller type=”xxxx” som attribut i ett input-element) kan användas som komplement, men vi vill av säkerhetsskäl ha full kontroll över felhanteringen på serversidan, och vi bör därför inte enbart förlita oss på felhantering på klientsidan.
+(OBS!) Gör all felhantering i din PHP-kod. Den inbyggda valideringen i HTML (såsom att ange required eller type=”xxxx” som attribut i ett input-element) kan användas som komplement, men vi vill av säkerhetsskäl ha full kontroll över felhanteringen på serversidan, och vi bör därför inte enbart förlita oss på felhantering på klientsidan.
 
 Tips på läsvärda länkar finns på kurswebbplatsen (ITHS-distans).
 
