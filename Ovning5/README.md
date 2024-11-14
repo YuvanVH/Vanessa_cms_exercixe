@@ -1,9 +1,12 @@
 # Övning 5
-___ PHP-webbplats fortsättning ___
 
-###### Hämta data med hjälp av formulär I den här övningen ska du vidareutveckla din tidigare skapade webbplats (från övning 2).
+_PHP-webbplats fortsättning_
 
-Fokus är att använda formulär på webbplatsen och därigenom inhämta och bearbeta data som användaren matar in. Arbeta vidare med din egen webbplats men fortsätt gärna att samarbeta med varandra. ##Instruktioner Öppna ditt tidigare projekt från övning
+## Hämta data med hjälp av formulär I den här övningen ska du vidareutveckla din tidigare skapade webbplats (från övning 2).
+
+Fokus är att använda formulär på webbplatsen och därigenom inhämta och bearbeta data som användaren matar in. Arbeta vidare med din egen webbplats men fortsätt gärna att samarbeta med varandra.
+
+## Instruktioner Öppna ditt tidigare projekt från övning
 
 2. Skapa en ny undersida (undersida 3). Vidareutveckla sedan de olika undersidorna enligt följande:
 
