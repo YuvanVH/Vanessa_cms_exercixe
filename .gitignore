@@ -1,2 +1,4 @@
+# Ignorera MAMP-specifika filer
+logs/
+tmp/
 .DS_Store
-*.log
