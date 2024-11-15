@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['tabellNummer'])) {
   $tabellNummer = (int)$_POST['tabellNummer'];
   // Om det inskrivna nummret är större än 1 OCH mindre än 9
   if ($tabellNummer >= 1 && $tabellNummer <= 9) {
-    echo "<hp>Multiplikationstabell för $tabellNummer:</p>";
+    echo "<br> <hp>Multiplikationstabell för $tabellNummer:</p>";
     echo "<ul>";
 
     for ($i = 1; $i <= 9; $i++) {
