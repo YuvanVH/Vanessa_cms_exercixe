@@ -36,12 +36,12 @@ ju ett bra tillfälle att repetera php-formulärshantering med tacksida, för de
 - 404-sida
 Egen design med lagom käckt meddelande med förslag på länkar samt  en sökruta.
 
-###Krav på webbplatsen:
+### Krav på webbplatsen:
 - En huvudmeny och sidfot ska finnas på alla webbplatsens sidor
 - Webbplatsen ska vara responsiv och fungera bra i mobilstorlek.
 
 
-###Instruktioner
+### Instruktioner
 1. Börja med att skapa en enkel designskiss eller wireframes för webbplatsens olika
 sidor, lägg extra fokus på hur och var det olika nyhetsrelaterade innehållet ska visas. (T.ex.
 Hur ska en enskild nyhetsartikel visas och var vill du ha artikelns bild, osv).
