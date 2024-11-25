@@ -7,7 +7,7 @@
     <input type="text" placeholder="Sök...">
     <button type="submit">Sök</button>
   </form>
-  <p><a href="index.php">Tillbaka till startsidan</a></p>
+  Prova att gå tillbaka till <a href="index.php">Startsidan</a>.</p>
 </main>
 
 <?php include 'includes/footer.php'; ?>

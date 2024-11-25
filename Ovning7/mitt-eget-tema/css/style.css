@@ -1,0 +1,81 @@
+ /*
+ Theme Name: Mitt Eget Tema
+ Description: Ett anpassat WordPress-tema för nyheter.
+ Author: Vanessa
+ Version: 1.0
+ */
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   color: #333;
+ }
+
+ /* Hero / bakgrund */
+ .hero {
+   position: relative;
+   height: 100vh;
+   background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+   color: #fff;
+ }
+
+ .overlay {
+   background: rgba(0, 0, 0, 0.5);
+   height: 100%;
+   width: 100%;
+ }
+
+ /* Logo */
+ .logo h1 {
+   font-size: 24px;
+   color: #fff;
+   margin-left: 20px;
+ }
+
+ /* Navigationsmeny */
+ .main-menu ul {
+   list-style: none;
+   display: flex;
+   gap: 15px;
+   margin-right: 20px;
+ }
+
+ .main-menu ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   transition: color 0.3s;
+ }
+
+ .main-menu ul li a:hover {
+   color: #f0c040;
+ }
+
+ /* Hero-text */
+ .hero-text {
+   text-align: center;
+   margin-top: 30%;
+ }
+
+ .hero-text .slogan {
+   font-size: 20px;
+   color: #f0c040;
+ }
+
+ .hero-text h1 {
+   font-size: 48px;
+ }
+
+ /* Footer */
+ footer {
+   text-align: center;
+   padding: 10px;
+   background: #333;
+   color: #fff;
+ }

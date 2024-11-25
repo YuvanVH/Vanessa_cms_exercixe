@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<main>
+<main class="about">
   <h2>Om oss</h2>
   <p>Vi är en nyhetsplattform dedikerad till att ge dig de bästa tipsen för resor, kultur och utrikesnyheter som är viktiga för resenärer.</p>
   <img src="images/about.jpg" alt="Team bakom nyhetssidan" class="responsive-image">

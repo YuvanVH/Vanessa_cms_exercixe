@@ -1,8 +1,8 @@
 <?php include 'includes/header.php'; ?>
 
-<main>
+<main class="contact">
   <h2>Kontakta oss</h2>
-  <form method="post" action="thankyou.php">
+  <form action="#" method="post">
     <label for="name">Namn:</label>
     <input type="text" id="name" name="name" required>
 

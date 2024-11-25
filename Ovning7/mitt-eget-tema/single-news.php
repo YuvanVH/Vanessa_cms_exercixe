@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
 
-<main>
+<main class="news-article">
   <article>
     <h2>10 fantastiska destinationer för 2024</h2>
     <p><strong>Publicerad:</strong> 25 november 2024</p>

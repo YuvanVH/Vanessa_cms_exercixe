@@ -1,4 +1,4 @@
-<nav>
+<nav class="main-menu">
   <ul>
     <li><a href="index.php">Startsida</a></li>
     <li><a href="news.php">Nyheter</a></li>
