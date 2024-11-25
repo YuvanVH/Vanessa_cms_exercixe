@@ -1,10 +1,39 @@
-<?php include 'includes/header.php'; ?>
+<?php
+include('functions.php');
+?>
+<!DOCTYPE html>
+<html lang="sv">
 
-<main class="about">
-  <h2>Om oss</h2>
-  <p>Vi är en nyhetsplattform dedikerad till att ge dig de bästa tipsen för resor, kultur och utrikesnyheter som är viktiga för resenärer.</p>
-  <img src="images/about.jpg" alt="Team bakom nyhetssidan" class="responsive-image">
-  <p>Oavsett om du letar efter nästa destination eller vill förstå hur politiska händelser påverkar dina resor, är vi här för att hjälpa dig.</p>
-</main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><?php echo getPageTitle(); ?></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
+<body>
+  <header class="hero" style="background-image: url('<?php echo getBackgroundImage(); ?>');">
+    <div class="overlay">
+      <div class="container">
+        <div class="hero-content">
+          <p class="slogan"><?php echo getPageSlogan(); ?></p>
+          <h1><?php echo getPageTitle(); ?></h1>
+        </div>
+        <?php include 'includes/menu.php'; ?>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <div class="container">
+        <h2>Om oss</h2>
+        <p>Välkommen till vår nyhetsbyrå! Här på Världsvyer delar vi de senaste nyheterna från hela världen.</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
 <?php include 'includes/footer.php'; ?>
