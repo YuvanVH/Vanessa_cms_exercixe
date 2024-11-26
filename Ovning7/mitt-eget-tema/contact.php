@@ -45,7 +45,6 @@ include('functions.php');
   </main>
 
 </body>
+<?php include 'includes/footer.php'; ?>
 
 </html>
-
-<?php include 'includes/footer.php'; ?>

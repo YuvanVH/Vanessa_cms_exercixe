@@ -16,11 +16,11 @@ include('functions.php');
   <header class="hero" style="background-image: url('<?php echo getBackgroundImage(); ?>');">
     <div class="overlay">
       <div class="container">
+        <?php include 'includes/menu.php'; ?>
         <div class="hero-content">
           <p class="slogan"><?php echo getPageSlogan(); ?></p>
           <h1><?php echo getPageTitle(); ?></h1>
         </div>
-        <?php include 'includes/menu.php'; ?>
       </div>
     </div>
   </header>

@@ -12,6 +12,8 @@ function getBackgroundImage()
       return 'images/contact-bg.jpg';
     case 'news.php':
       return 'images/news-bg.jpg';
+    case 'index.php':
+      return 'images/default-bg.jpg';
     default:
       return 'images/default-bg.jpg';  // Standard bakgrundsbild som jag ska leta upp
   }
