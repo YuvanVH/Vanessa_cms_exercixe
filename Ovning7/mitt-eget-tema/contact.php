@@ -5,7 +5,7 @@ include 'includes/header.php';
 <main>
   <section class="contact">
     <div class="container">
-      <h2>Kontakta oss</h2>
+      <h3>Kontakta oss</h3>
       <form action="submit_form.php" method="post">
         <label for="name">Ditt namn:</label>
         <input type="text" id="name" name="name" required>

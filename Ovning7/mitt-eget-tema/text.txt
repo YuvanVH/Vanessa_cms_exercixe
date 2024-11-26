@@ -47,3 +47,128 @@ Anteckningar och kodstycken:
 </main>
 
 <?php include 'includes/footer.php'; ?>
+_____________________
+
+styling about
+ /* ===== Styling för om-sektionen ===== */
+ .about {
+   background-color: #f8f8f8;
+   padding: 4rem 0;
+ }
+
+ .container {
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+ }
+
+ /* Styling för varje block */
+ .about-section {
+   width: 100%;
+   /* Containrar sträcker sig över hela skärmen */
+   display: flex;
+   align-items: center;
+   padding: 17vh 5rem;
+   /* Luft runt innehåll */
+ }
+
+ .about-section .content {
+   max-width: 1100px;
+   /* Begränsa bredden på texten */
+   margin: 0 auto;
+   /* Centrera innehållet */
+   text-align: left;
+ }
+
+ .about-section h2,
+ .about-section h3 {
+   font-family: "Crimson Text", serif;
+   font-size: 2rem;
+   color: #2c3e50;
+   margin-bottom: 1rem;
+ }
+
+ .about-section p,
+ .about-offer p {
+   padding-top: 2rem;
+   font-size: 1.125rem;
+   line-height: 1.8;
+   color: #555;
+ }
+
+ .about-section a {
+   color: #cc7a00;
+   text-decoration: none;
+   font-weight: bold;
+ }
+
+ .about-section a:hover {
+   text-decoration: underline;
+ }
+
+ .about-section img {
+   width: 100%;
+   max-width: 400px;
+   /* Begränsar bildens maxbredd */
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* app offer */
+ .about-offer {
+   background-color: #f9edc6;
+   width: 100%;
+ }
+
+ .about-offer h3 {
+   text-align: center;
+ }
+
+ .about-offer ul {
+   list-style-type: disc;
+   padding: 0rem 7rem;
+   margin: 1rem 0;
+ }
+
+ .about-offer li {
+   margin-bottom: 1rem;
+   line-height: 1.6;
+   font-size: 17px;
+   color: #555;
+ }
+
+ .about-offer li strong {
+   color: #2c3e50;
+   font-weight: bold;
+ }
+
+ /* Reverse layout */
+ .about-section.reverse {
+   flex-direction: row-reverse;
+   background-color: #f9edc6;
+   gap: 2rem;
+ }
+
+ .about-section.reverse h3,
+ .about-section.reverse p,
+ .about-section.reverse a {
+   color: #5f3d16;
+ }
+
+ .about-section.reverse a:hover {
+   color: #fad46a;
+   /* Ljusa länkar vid hover */
+ }
+
+ /* Responsiv design */
+ @media (max-width: 768px) {
+   .about-section {
+     flex-direction: column;
+     text-align: center;
+     padding: 3rem 1rem;
+   }
+
+   .about-section img {
+     max-width: 100%;
+   }
+ }

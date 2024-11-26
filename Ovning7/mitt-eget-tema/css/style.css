@@ -17,6 +17,31 @@
    color: #000000;
  }
 
+ span {
+   margin: 1rem;
+ }
+
+ hr {
+   width: 20%;
+   height: 5px;
+   background-color: #f0c040;
+   border: none;
+   margin: 0 0 23px 0;
+ }
+
+ .contact-link {
+   text-decoration: none;
+   color: #5c4813;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 0px 10px;
+   transition: background-color 0.3s, color 0.3s;
+ }
+
+ .contact-link:hover {
+   color: #dcbf5e;
+ }
+
  /* ===== Fonts / textstill ===== */
 
  h1 {
@@ -37,7 +62,7 @@
  /*====== Hero-bild / bakgrund =====*/
  .hero {
    position: relative;
-   height: 90vh;
+   height: 85vh;
    background-size: cover;
    background-position: center;
    display: flex;
@@ -61,7 +86,9 @@
    text-align: center;
  }
 
+ /* Titeln på header */
  .hero-content {
+   margin: 3em;
    font-size: 24px;
    font-style: italic;
    color: #ffd86e;
@@ -74,7 +101,7 @@
    color: #fff;
  }
 
- /* Logotyp + headern */
+ /*===== Logotyp + headern ======*/
  .main-menu-header-container {
    display: grid;
    grid-template-columns: auto auto;
@@ -86,7 +113,8 @@
 
  .logo-header {
    max-width: 124px;
-   margin-left: 18px;
+   margin-left: 20px;
+   margin-top: 0.5em;
    transition: transform 0.3s ease;
  }
 
@@ -100,7 +128,7 @@
    display: flex;
    justify-content: flex-end;
    gap: 26px;
-   margin-right: 55px;
+   margin-right: 10px;
    font-weight: 280;
    font-size: 1rem;
    line-height: var(--ast-body-line-height, 1.7em);
@@ -109,7 +137,7 @@
  .main-menu ul li a {
    color: #fff;
    text-decoration: none;
-   font-size: 18px;
+   font-size: 17px;
    position: relative;
    transition: color 0.3s;
  }
@@ -130,7 +158,6 @@
 
  .main-menu ul li a:hover {
    color: #fad46a;
-   /* Ändra textfärgen vid hover */
  }
 
  .main-menu ul li a:hover::after {
@@ -153,10 +180,135 @@
    font-size: 48px;
  }
 
+ /* ==== Layout för sektioner/containers =======*/
+ .section {
+   padding: 7rem 2rem;
+   background-color: #f8f8f8;
+ }
+
+ .container {
+   max-width: 1100px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+ }
+
+ /* Flexibelt grid för innehåll */
+ .section-content {
+   display: flex;
+   /* flex-wrap: wrap; */
+   align-items: center;
+   gap: 2rem;
+ }
+
+ .section-content img {
+   max-width: 100%;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Grundläggande textstil */
+ .section h2,
+ .section h3 {
+   font-family: 'Crimson Text', serif;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   color: #2c3e50;
+ }
+
+ .section p {
+   font-size: 1.125rem;
+   line-height: 1.8;
+   color: #555;
+ }
+
+ /* Sektioner listor*/
+ .section ul {
+   list-style-type: disc;
+   padding-left: 2rem;
+   margin: 1rem 0;
+
+ }
+
+ .section li {
+   margin-bottom: 0.5rem;
+   font-size: 1.125rem;
+   line-height: 1.6;
+   color: #555;
+ }
+
+ .section li strong {
+   color: #ffffff;
+   font-weight: bold;
+ }
+
+ /* Extra styling för highlight-sektion */
+ .section--highlight h3 {
+   color: #dcbf5e;
+ }
+
+ .section--highlight ul {
+   list-style-type: disc;
+ }
+
+ .section--highlight li {
+   color: #ffffff;
+ }
+
+ .section--highlight {
+   background-color: #455346;
+ }
+
+ /* Sektion med omvänd layout */
+ .section--reverse {
+   background-color: #f9edc6;
+   padding: 4rem 2rem;
+ }
+
+ /* Flexbox för sektionen */
+ .section--reverse .section-content {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+ }
+
+ .section--reverse h3 {
+   font-size: 2rem;
+   color: #2c3e50;
+   margin-bottom: 1rem;
+ }
+
+ .section--reverse p {
+   font-size: 1.125rem;
+   line-height: 1.6;
+   color: #555;
+ }
+
+ .section--reverse img {
+   max-width: 450px;
+   /* Bilden tar upp max hälften av bredden */
+   height: auto;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ /* Responsiv design för mindre skärmar */
+ @media (max-width: 768px) {
+   .section--reverse .section-content {
+     flex-direction: column;
+     text-align: center;
+   }
+
+   .section--reverse img {
+     max-width: 80%;
+   }
+ }
+
  /*====== Footer =======*/
  footer {
    text-align: center;
    padding: 10px;
-   background: #605d0b;
+   background: #604d0d;
    color: #fff;
  }
