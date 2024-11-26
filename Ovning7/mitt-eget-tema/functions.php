@@ -43,12 +43,12 @@ function getPageTitle()
 
   switch ($page) {
     case 'about.php':
-      return 'Om Oss';
+      return '-Om Oss-';
     case 'contact.php':
-      return 'Kontakta Oss';
+      return '-Kontakta Oss-';
     case 'news.php':
-      return 'Nyheter';
+      return '-Nyheter-';
     default:
-      return 'Världsvyer';
+      return '-Världsvyer-';
   }
 }

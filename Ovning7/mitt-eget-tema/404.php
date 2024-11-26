@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
 
-<main>
-  <h2>404 - Sidan kunde inte hittas</h2>
+<main class="not-found-page">
+  <h2 class="not-found-title">404 - Sidan kunde inte hittas</h2>
   <p>Tyvärr kunde vi inte hitta sidan du letade efter. Prova att söka här:</p>
   <form>
     <input type="text" placeholder="Sök...">
