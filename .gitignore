@@ -1,12 +1,10 @@
-# Ignorera MAMP-specifika filer
-# logs/
-# tmp/
-# .DS_Store
-# Ignorera hela WordPress-installationen, utom temat
-wordpress_e8/*
-!wordpress_e8/wp-content/themes/e8_theme/
+# Ignorera hela wordpress_e8-mappen
+# wordpress_e8/*
 
-# Ignorera WordPress-kärnfiler och andra onödiga filer
+# Men inkludera temat
+!wordpress_e8/wp-content/themes/
+
+# Ignorera andra WordPress-specifika mappar
 wordpress_e8/wp-content/uploads/
 wordpress_e8/wp-content/cache/
 wordpress_e8/wp-content/upgrade/
