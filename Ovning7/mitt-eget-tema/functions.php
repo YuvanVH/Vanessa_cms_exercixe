@@ -1,4 +1,38 @@
 <?php
+// Funktion för hämtning av rätt css-fil
+function getCssStyleFile()
+{
+  // Hämta filnamnet beroende på sida
+  $current_page = basename($_SERVER['PHP_SELF']);
+
+  // Ladda specifik CSS-fil baserat på vilken sida
+  switch ($current_page) {
+    case 'index.php':
+      return '<link rel="stylesheet" href="css/style.css">';
+      break;
+    case 'news.php':
+      return '<link rel="stylesheet" href="css/style.css">';
+      break;
+    case 'single-news.php':
+      return '<link rel="stylesheet" href="css/style.css">';
+      break;
+    case 'about.php':
+      return '<link rel="stylesheet" href="css/style.css">';
+      break;
+    case 'contact.php':
+      return '<link rel="stylesheet" href="css/contact.css">'; // unik
+      break;
+    case '404.php':
+      return '<link rel="stylesheet" href="css/404.css">'; //FIXA
+      break;
+    default:
+      // Om sidan inte matchar, style.css laddas upp
+      return '<link rel="stylesheet" href="css/style.css">';
+  }
+}
+?>
+
+<?php
 // Funktion för att hämta bakgrundsbild beroende på sidan
 function getBackgroundImage()
 {

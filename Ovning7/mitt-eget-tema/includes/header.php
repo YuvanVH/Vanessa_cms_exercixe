@@ -8,7 +8,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo getPageTitle(); ?></title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Dynamisk CSS-laddning baserat på aktuell sida -->
+    <?php echo getCssStyleFile(); ?>
+  </head>
+
   </head>
 
   <body>
