@@ -1,4 +1,25 @@
 # Ignorera MAMP-specifika filer
-logs/
-tmp/
+# logs/
+# tmp/
+# .DS_Store
+# Ignorera hela WordPress-installationen, utom temat
+wordpress_e8/*
+!wordpress_e8/wp-content/themes/e8_theme/
+
+# Ignorera WordPress-kärnfiler och andra onödiga filer
+wordpress_e8/wp-content/uploads/
+wordpress_e8/wp-content/cache/
+wordpress_e8/wp-content/upgrade/
+wordpress_e8/wp-content/plugins/
+
+# OS-specifika filer
 .DS_Store
+Thumbs.db
+
+# Loggar och debug-filer
+*.log
+debug.log
+
+# Git-specifika
+.git
+.gitignore
