@@ -1,5 +1,5 @@
 # Ignorera hela wordpress_e8-mappen
-# wordpress_e8/*
+#wordpress_e8/*
 
 # Men inkludera temat
 !wordpress_e8/wp-content/themes/
