@@ -111,8 +111,22 @@
    margin-top: 2vh;
  }
 
- .logo-header {
+ .main-menu-header-container img {
    max-width: 124px;
+   margin-left: 20px;
+   margin-top: 0.5em;
+   transition: transform 0.3s ease;
+ }
+
+ .logo-header {
+   max-width: 124px !important;
+   margin-left: 20px;
+   margin-top: 0.5em;
+   transition: transform 0.3s ease;
+ }
+
+ .logo-header img {
+   max-width: 124px !important;
    margin-left: 20px;
    margin-top: 0.5em;
    transition: transform 0.3s ease;

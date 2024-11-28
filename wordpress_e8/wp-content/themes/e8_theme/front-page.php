@@ -6,9 +6,11 @@
       <h1><?php bloginfo('name'); ?></h1> <!-- Dynamisk sidtitel -->
       <p><?php bloginfo('description'); ?></p> <!-- Dynamisk slogan/description -->
       <a href="<?php echo site_url('/om-oss'); ?>" class="button">Lär känna oss</a>
+
     </div>
   </section>
-
+  <?php echo '<img src="' . get_template_directory_uri() . '/images/website-logo.png" alt="Logo image">';
+  ?>
   <section class="latest-news">
     <div class="container">
       <h2>Senaste Nyheter</h2>

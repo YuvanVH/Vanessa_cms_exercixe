@@ -20,7 +20,7 @@
               the_custom_logo(); // Visar den anpassade loggan
             } else {
               // Om ingen logga har laddats upp, visa text
-              echo '<img src="' . get_template_directory_uri() . '/images/website-logo.png" alt="Logo image">';
+              echo '<img class="logo-header" src="' . get_template_directory_uri() . '/images/website-logo.png" alt="Logo image">';
             }
             ?>
           </a>
@@ -35,6 +35,7 @@
             ?>
           </nav>
         </div>
+        <!-- här kanske ska finnas titel på page sidan? samt slogan??? -->
       </div>
     </div>
   </header>
