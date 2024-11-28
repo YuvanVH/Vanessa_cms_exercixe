@@ -1,21 +1,17 @@
-<?php function register_my_menus()
+<?php
+// Tema-stöd för miniatyrbilder och menyer
+function my_theme_setup()
 {
-  register_nav_menus(
-    array(
-      'header-menu' => __('Header Menu'),
-    )
-  );
+  add_theme_support('post-thumbnails'); // För att kunna välja utvald bild till post/page
+  add_theme_support('menus'); // För att kunna skapa menyer under Appearance -> Menus
 }
-add_action('after_setup_theme', 'register_my_menus');
-?>
+add_action('after_setup_theme', 'my_theme_setup');
 
-<?php function theme_customizer_settings($wp_customize)
+// Registrera menyer
+function register_my_menus()
 {
-  $wp_customize->add_setting('header_background_image');
-  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'header_background_image', array(
-    'label' => 'Bakgrundsbild för header',
-    'section' => 'title_tagline',
-    'settings' => 'header_background_image',
-  )));
+  register_nav_menus(array(
+    'primary' => 'Huvudmeny',
+  ));
 }
-add_action('customize_register', 'theme_customizer_settings');
+add_action('init', 'register_my_menus');
