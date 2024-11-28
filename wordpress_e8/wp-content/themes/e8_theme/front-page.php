@@ -1,13 +1,11 @@
-<?php
-get_header(); // Laddar header.php
-?>
+<?php get_header(); ?>
 
 <main>
   <section class="hero">
     <div class="container">
-      <h1>Välkommen till Världsvyer</h1>
-      <p>Upptäck världen med oss.</p>
-      <a href="/wordpress_e8/om-oss" class="button">Lär känna oss</a>
+      <h1><?php bloginfo('name'); ?></h1> <!-- Dynamisk sidtitel -->
+      <p><?php bloginfo('description'); ?></p> <!-- Dynamisk slogan/description -->
+      <a href="<?php echo site_url('/om-oss'); ?>" class="button">Lär känna oss</a>
     </div>
   </section>
 
@@ -16,7 +14,7 @@ get_header(); // Laddar header.php
       <h2>Senaste Nyheter</h2>
       <div class="news-items">
         <?php
-        // Hämta de senaste tre inläggen
+        // Dynamiskt hämtar de senaste 3 inläggen
         $args = array(
           'post_type' => 'post',
           'posts_per_page' => 3,
@@ -24,11 +22,10 @@ get_header(); // Laddar header.php
         $query = new WP_Query($args);
 
         if ($query->have_posts()) :
-          while ($query->have_posts()) : $query->the_post();
-        ?>
+          while ($query->have_posts()) : $query->the_post(); ?>
             <article class="news-item">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-              <p><?php the_excerpt(); ?></p>
+              <p><?php the_excerpt(); ?></p> <!-- Kort utdrag -->
             </article>
         <?php
           endwhile;
@@ -42,6 +39,4 @@ get_header(); // Laddar header.php
   </section>
 </main>
 
-<?php
-get_footer(); // Laddar footer.php
-?>
+<?php get_footer(); ?>

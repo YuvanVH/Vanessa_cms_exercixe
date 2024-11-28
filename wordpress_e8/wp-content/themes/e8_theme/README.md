@@ -30,7 +30,6 @@ header, footer och andra eventuellt återkommande element. Glöm ej att inkluder
 wp_head(), wp_footer(), wp_body_class() och wp_body_open()
 - Fortsätt att committa varje timme. Endast din temamapp e8_fornamn skall pushas ifrån denna övning.
 
-- Förbered och spela in en presentation av din färdiga/ofärdiga webbplats/tema, där du kort (max 2 minuter) berättar vad du har gjort
-och/eller utmaningar som du har stött på. Denna spelas förslagsvis in med skärminspelning eller mobiltelefon.
+- Förbered och spela in en presentation av din färdiga/ofärdiga webbplats/tema, där du kort (max 2 minuter) berättar vad du har gjort och/eller utmaningar som du har stött på. Denna spelas förslagsvis in med skärminspelning eller mobiltelefon.
 
 Övning 8 Pågår till och med fredag eftermiddag.
