@@ -35,7 +35,14 @@
             ?>
           </nav>
         </div>
-        <!-- här kanske ska finnas titel på page sidan? samt slogan??? -->
+        <!-- titel och slogan -->
+        <div class="hero-content">
+          <h1>-<?php echo is_front_page() ? get_bloginfo('name') : wp_title('', false); ?> -</h1>
+        </div>
+        <?php
+        if (get_post_meta(get_the_ID(), 'slogan', true)) {
+          echo '<p class="slogan">' . esc_html(get_post_meta(get_the_ID(), 'slogan', true)) . '</p>';
+        }
+        ?>
       </div>
-    </div>
   </header>
