@@ -3,15 +3,34 @@
 get_header(); ?>
 
 <main>
+  <section class="category-list">
+    <div class="container">
+      <h2>Kategorier</h2>
+      <ul>
+        <?php
+        // Visar alla kategorier
+        $args = array(
+          'orderby' => 'name',
+          'order' => 'ASC'
+        );
+        $categories = get_categories($args);
+        foreach ($categories as $category) :
+        ?>
+          <li><a href="<?php echo get_category_link($category->term_id); ?>"><?php echo $category->name; ?></a></li>
+        <?php endforeach; ?>
+      </ul>
+    </div>
+  </section>
+
   <section class="news-list">
     <div class="container">
       <h2>Nyheter</h2>
       <div class="news-items">
         <?php
-        // Start WordPress loop för att hämta de senaste inläggen
+        // Start WordPress loop, hämta de senaste inläggen
         $args = array(
-          'post_type' => 'post',  // Hämtar vanliga inlägg
-          'posts_per_page' => 5,  // Antalet nyheter att visa
+          'post_type' => 'post', // Hämtar vanliga inlägg
+          'posts_per_page' => 5,
         );
         $query = new WP_Query($args);
 

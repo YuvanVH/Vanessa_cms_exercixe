@@ -6,9 +6,12 @@
       <div class="single-news-info-category">
         <h2><?php the_title(); ?></h2>
         <p><strong>Publicerad:</strong> <?php the_date(); ?></p>
-        <p><strong>Kategori:</strong><?php
-                                      ?> </p>
-        <!-- FUNKAR EJ KOLLA UPP^^ -->
+        <p><strong>Kategori:</strong>
+          <?php
+          // Visar kategorier för det aktuella inlägget
+          the_category(', ');
+          ?>
+        </p>
       </div>
     </section>
 

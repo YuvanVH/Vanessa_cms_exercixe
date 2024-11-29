@@ -90,16 +90,19 @@
  .hero-content {
    margin: 3em;
    font-size: 24px;
-   font-style: italic;
    color: #ffd86e;
    margin-bottom: 10px;
  }
 
  .hero-content h1 {
-   font-size: 84px;
+   /* Anpassar fontstorleken beroende på skärmens bredd */
+   font-size: clamp(32px, 7vw, 80px);
    font-weight: bold;
    color: #fff;
+   line-height: 1.2;
  }
+
+
 
  /*===== Logotyp + headern ======*/
  .main-menu-header-container {

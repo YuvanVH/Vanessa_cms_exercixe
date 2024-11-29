@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
 <main>
-  <section class="hero">
+  <section class="section">
     <div class="container">
       <!-- Dynamisk slogan/description -->
       <a href="<?php echo site_url('/om-oss'); ?>" class="button">Lär känna oss</a>
-
     </div>
   </section>
 
