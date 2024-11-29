@@ -96,13 +96,11 @@
 
  .hero-content h1 {
    /* Anpassar fontstorleken beroende på skärmens bredd */
-   font-size: clamp(32px, 7vw, 80px);
+   font-size: clamp(32px, 7vw, 78px);
    font-weight: bold;
    color: #fff;
    line-height: 1.2;
  }
-
-
 
  /*===== Logotyp + headern ======*/
  .main-menu-header-container {
@@ -199,8 +197,10 @@
 
  /* ==== Layout för sektioner/containers =======*/
  .section {
-   padding: 7rem 2rem;
+   padding: 4rem 2rem;
    background-color: #f8f8f8;
+   /* padding: 7rem 2rem;
+   background-color: #f8f8f8; */
  }
 
  .section h3 {
@@ -263,6 +263,11 @@
    margin: 1rem 0;
  }
 
+ .section ol li strong {
+   color: #343434;
+   font-weight: bold;
+ }
+
  .section li {
    margin-bottom: 0.5rem;
    font-size: 1.125rem;
@@ -271,13 +276,14 @@
    max-width: 700px !important;
  }
 
- .single-news-item li strong {
-   color: #000 !important;
+ .single-news-item ol li strong {
+   color: #343434 !important;
    font-weight: bold;
  }
 
  .section li strong {
-   color: #ffffff;
+   color: #343434;
+   /* Va vit innan*/
    font-weight: bold;
  }
 
@@ -331,6 +337,63 @@
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
+ /*=== Nyheter ===*/
+ .news-items {
+   font-family: 'Plus Jakarta Sans', sans-serif;
+   padding: 5vh;
+ }
+
+ .news-list h2 {
+   font-family: 'Crimson Text', serif;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   color: #2c3e50;
+ }
+
+
+ .news-items article {
+   list-style-type: none;
+   padding-bottom: 3vh;
+ }
+
+ .news-items article a {
+   text-decoration: none;
+   padding: 0;
+ }
+
+ /* Kategori-lista */
+ .category-list ul {
+   display: flex;
+   justify-content: flex-start;
+   gap: 5vh;
+   list-style-type: none;
+   text-align: center
+ }
+
+ .category-list ul li {
+   margin: 5px 0;
+ }
+
+ .category-list ul li a {
+   text-decoration: none;
+   color: #333;
+   font-weight: bold;
+   transition: color 0.3s;
+ }
+
+ .category-list ul li a:hover {
+   color: #efbc2e;
+ }
+
+
+ /*====== Footer =======*/
+ footer {
+   text-align: center;
+   padding: 10px;
+   background: #604d0d;
+   color: #fff;
+ }
+
  /* Responsiv design för mindre skärmar */
  @media (max-width: 768px) {
    .section--reverse .section-content {
@@ -341,12 +404,14 @@
    .section--reverse img {
      max-width: 80%;
    }
- }
 
- /*====== Footer =======*/
- footer {
-   text-align: center;
-   padding: 10px;
-   background: #604d0d;
-   color: #fff;
+   .category-list ul {
+     display: block;
+     text-align: left;
+     margin-top: 3rem;
+   }
+
+   .category-list ul li {
+     padding: 5px;
+   }
  }

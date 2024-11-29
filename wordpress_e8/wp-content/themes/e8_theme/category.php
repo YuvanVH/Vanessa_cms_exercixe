@@ -1,5 +1,4 @@
 <?php
-/* Template Name: Nyhetssida */
 get_header(); ?>
 
 <main>
@@ -23,34 +22,31 @@ get_header(); ?>
     </div>
   </section>
 
-  <section class="news-list">
+  <section class="category-archive">
     <div class="container">
-      <div class="news-items">
-        <h2>Senaste Nyheterna</h2>
-        <hr>
-        <?php
-        // Start WordPress loop, hämta de senaste inläggen
-        $args = array(
-          'post_type' => 'post', // Hämtar vanliga inlägg
-          'posts_per_page' => 5,
-        );
-        $query = new WP_Query($args);
+      <h2>Nyheter i kategorin: <?php single_cat_title(); ?></h2>
 
-        if ($query->have_posts()) :
-          while ($query->have_posts()) : $query->the_post();
-        ?>
+      <?php if (have_posts()) : ?>
+        <div class="category-news-items">
+          <?php while (have_posts()) : the_post(); ?>
             <article class="news-item">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <p><?php the_excerpt(); ?></p>
             </article>
-        <?php
-          endwhile;
-        else :
-          echo '<p>Inga nyheter hittades.</p>';
-        endif;
-        wp_reset_postdata();
-        ?>
-      </div>
+          <?php endwhile; ?>
+        </div>
+
+        <!-- Navigering mellan sidor om det finns fler inlägg -->
+        <div class="pagination">
+          <?php
+          // Navigering om det finns flera sidor av inlägg
+          echo paginate_links();
+          ?>
+        </div>
+
+      <?php else : ?>
+        <p>Inga inlägg hittades i denna kategori.</p>
+      <?php endif; ?>
     </div>
   </section>
 </main>
