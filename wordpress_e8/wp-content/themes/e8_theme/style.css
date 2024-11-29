@@ -42,6 +42,17 @@
    color: #dcbf5e;
  }
 
+ .read-more-link a {
+   color: #4b4b4b;
+   font-size: 18px;
+   font-weight: bold;
+   transition: background-color 0.3s, color 0.3s;
+ }
+
+ .read-more-link a:hover {
+   color: #dcbf5e;
+ }
+
  /* ===== Fonts / textstill ===== */
 
  h1 {
@@ -276,11 +287,6 @@
    max-width: 700px !important;
  }
 
- .single-news-item ol li strong {
-   color: #343434 !important;
-   font-weight: bold;
- }
-
  .section li strong {
    color: #343434;
    /* Va vit innan*/
@@ -337,13 +343,17 @@
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
- /*=== Nyheter ===*/
- .news-items {
+ /*=== Nyheter + Kategori ===*/
+ .news-items,
+ .latest-new,
+ .category-archive {
    font-family: 'Plus Jakarta Sans', sans-serif;
    padding: 5vh;
  }
 
- .news-list h2 {
+ .news-list h2,
+ .latest-news .container h2,
+ .category-archive .container h2 {
    font-family: 'Crimson Text', serif;
    font-size: 2rem;
    margin-bottom: 1rem;
@@ -351,12 +361,14 @@
  }
 
 
- .news-items article {
+ .news-items article,
+ .category-archive article {
    list-style-type: none;
    padding-bottom: 3vh;
  }
 
- .news-items article a {
+ .news-items article a,
+ .category-news-items article a {
    text-decoration: none;
    padding: 0;
  }
@@ -383,6 +395,16 @@
 
  .category-list ul li a:hover {
    color: #efbc2e;
+ }
+
+ /* ensidig nyhets sida */
+ .single-news {
+   padding: 5vh 0;
+ }
+
+ .single-news-item ol li strong {
+   color: #343434 !important;
+   font-weight: bold;
  }
 
 

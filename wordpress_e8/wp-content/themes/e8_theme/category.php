@@ -23,25 +23,31 @@ get_header(); ?>
   </section>
 
   <section class="category-archive">
+    <div class="read-more-link">
+      <a href="<?php echo site_url('/nyheter'); ?>" class="button"> ← Tillbaks till Senaste Nyheterna</a>
+    </div>
+    <span></span>
     <div class="container">
-      <h2>Nyheter i kategorin: <?php single_cat_title(); ?></h2>
 
+      <h2>Nyheter i kategorin:
+        <?php single_cat_title(); ?>
+      </h2>
+      <hr>
       <?php if (have_posts()) : ?>
         <div class="category-news-items">
           <?php while (have_posts()) : the_post(); ?>
             <article class="news-item">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <p><strong>Publicerad:</strong> <?php echo get_the_date(); ?></p>
+              <p><strong>Kategori:</strong>
+                <?php
+                // Visar kategorier för det aktuella inlägget
+                the_category(', ');
+                ?>
+              </p>
               <p><?php the_excerpt(); ?></p>
             </article>
           <?php endwhile; ?>
-        </div>
-
-        <!-- Navigering mellan sidor om det finns fler inlägg -->
-        <div class="pagination">
-          <?php
-          // Navigering om det finns flera sidor av inlägg
-          echo paginate_links();
-          ?>
         </div>
 
       <?php else : ?>

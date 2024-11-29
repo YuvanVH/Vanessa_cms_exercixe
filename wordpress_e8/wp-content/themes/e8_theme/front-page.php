@@ -10,8 +10,9 @@
 
   <section class="latest-news">
     <div class="container">
-      <h2>Senaste Nyheter</h2>
       <div class="news-items">
+        <h2>Senaste Nyheterna</h2>
+        <hr>
         <?php
         // Dynamiskt hämtar de senaste 3 inläggen
         $args = array(
@@ -24,6 +25,13 @@
           while ($query->have_posts()) : $query->the_post(); ?>
             <article class="news-item">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+              <p><strong>Publicerad:</strong> <?php echo get_the_date(); ?></p>
+              <p><strong>Kategori:</strong>
+                <?php
+                // Visar kategorier för det aktuella inlägget
+                the_category(', ');
+                ?>
+              </p>
               <p><?php the_excerpt(); ?></p> <!-- Kort utdrag -->
             </article>
         <?php
@@ -33,6 +41,9 @@
         endif;
         wp_reset_postdata();
         ?>
+        <div class="read-more-link">
+          <a href="<?php echo site_url('/nyheter'); ?>" class="button">Läs mer</a>
+        </div>
       </div>
     </div>
   </section>

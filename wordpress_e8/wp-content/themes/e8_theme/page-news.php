@@ -41,6 +41,15 @@ get_header(); ?>
         ?>
             <article class="news-item">
               <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+              <p><strong>Publicerad:</strong> <?php echo get_the_date(); ?></p>
+              <p><strong>Kategori:</strong>
+                <?php
+                // Visar kategorier för det aktuella inlägget
+                the_category(', ');
+                ?>
+              </p>
+
               <p><?php the_excerpt(); ?></p>
             </article>
         <?php
